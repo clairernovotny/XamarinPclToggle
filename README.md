@@ -9,6 +9,9 @@ The short version is that NuGet (as of 2.7.1) does not properly handle mapping p
 class libraries if you have an additional equivalent frameworks installed. Xamarin uses 
 this functionality to map MonoTouch and MonoAndroid to the correct PCL profiles.
 
+NuGet 2.7.2 will have a fix for this once its released. Be sure to re-enable the Xamarin
+PCL profiles once you upgrade NuGet.
+
 A symptom of this bug is the following error when you try to install or update a NuGet 
 package to your PCL project:
 
@@ -28,5 +31,7 @@ Click the Disable button to disable the Xamarin PCL profiles and Enable to resto
 
 ### You will have to restart Visual Studio for NuGet to see the changes!
 
-Hopefully this issue will be addressed in a future NuGet release. You can track
-the status of the issue here: https://nuget.codeplex.com/workitem/2926.
+This issue will be addressed in NuGet 2.7.2, though there's no current ETA. I expect
+it to be before the end of 2013.
+
+You can track the status of the issue here: https://nuget.codeplex.com/workitem/2926.
