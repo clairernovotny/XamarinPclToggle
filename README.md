@@ -16,8 +16,15 @@ package to your PCL project:
 Could not install package '<packagename>'. You are trying to install this package into a project that targets 'portable-net45+win+MonoAndroid10+MonoTouch10', but the package does not contain any assembly references or content files that are compatible with that framework. For more information, contact the package author.
 ```
 
-If you see this error, then this tool can help you workaround it. You can get the binary from http://sdrv.ms/1isK6EQ
-or build the source yourself. Click the Disable button to disable the Xamarin PCL profiles and Enable to restore them.
+If you see this error, then this tool can help you workaround it. 
+
+##Get the binary 
+http://sdrv.ms/1isK6EQ
+
+As the tool requires Admin rights, you can build the source yourself if you prefer. 
+
+## Usage
+Click the Disable button to disable the Xamarin PCL profiles and Enable to restore them.
 
 ### You will have to restart Visual Studio for NuGet to see the changes!
 
