@@ -1,0 +1,30 @@
+﻿<Window x:Class="XamarinPclToggle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xamarinPclToggle="clr-namespace:XamarinPclToggle"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <xamarinPclToggle:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Content="Enable PCLs" Command="{Binding EnableXamarinPclCommand}"
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Center" 
+                Margin="0,0,15,0"/>
+        <Button Content="Disable PCLs" Command="{Binding DisableXamarinPclCommand}"
+                Grid.Column="1"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Center" 
+                Margin="15,0,0,0"/>
+        <TextBlock Text="{Binding Message}" 
+                   FontSize="20"
+                   VerticalAlignment="Center"
+                   Margin="0, 75, 0, 0"
+                   HorizontalAlignment="Center" 
+                   Grid.ColumnSpan="2" />
+    </Grid>
+</Window>

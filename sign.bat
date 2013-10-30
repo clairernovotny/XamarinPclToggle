@@ -1,0 +1,2 @@
+@rem "C:\Program Files (x86)\Windows Kits\8.1\bin\x86\signtool" sign /v /sha1 fff536c0a553308ce6ee5378b4ac7edf8cef31d1 /t http://timestamp.verisign.com/scripts/timestamp.dll %1
+@"C:\Program Files (x86)\Windows Kits\8.1\bin\x86\signtool" sign /fd sha256 /v /sha1 fff536c0a553308ce6ee5378b4ac7edf8cef31d1 /t http://timestamp.verisign.com/scripts/timestamp.dll %1
